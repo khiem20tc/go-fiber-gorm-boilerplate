@@ -2,7 +2,6 @@ package main
 
 import (
 	"go-fiber-gorm-boilerplate/config"
-	"go-fiber-gorm-boilerplate/gorm"
 	"go-fiber-gorm-boilerplate/router"
 
 	"github.com/gofiber/fiber/v2"
@@ -25,9 +24,9 @@ func main() {
 	app.Use(logger.New(logger.Config{}))
 
 	//Initialize connect to database
-	gorm.Connection()
-	gorm.AutoMigration()
-	defer gorm.Disconnection()
+	// gorm.Connection()
+	// gorm.AutoMigration()
+	// defer gorm.Disconnection()
 
 	// Initialize router
 	router.New(app)

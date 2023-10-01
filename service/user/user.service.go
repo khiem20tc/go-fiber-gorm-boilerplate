@@ -11,6 +11,10 @@ func Get(c *fiber.Ctx) error {
 	var users model.User
 	result := gorm.DB.Find(&users)
 
+	input := c.Locals("input").(*validator.GenNewPwd)
+
+	user := c.Locals("user").(*jsonWebToken.MapClaims)
+
 	if result.Error != nil {
 		return c.Status(fiber.ErrBadRequest.Code).JSON(fiber.Map{
 			"success": false,
