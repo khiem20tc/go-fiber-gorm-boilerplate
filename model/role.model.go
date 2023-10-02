@@ -1,5 +1,5 @@
 package model
 
 type Role struct {
-	ID Decimal `gorm:"uniqueIndex" json:"id"`
+	ID string `gorm:"uniqueIndex" json:"id"`
 }
