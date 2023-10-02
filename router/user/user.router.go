@@ -1,7 +1,7 @@
 package userRouter
 
 import (
-	userService "go-fiber-gorm-boilerplate/service/user"
+	userService "botp-gateway/service/user"
 
 	"github.com/gofiber/fiber/v2"
 )

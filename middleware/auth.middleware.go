@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"go-api/model"
-	jsonWebToken "go-api/utils/jwt"
+	"botp-gateway/model"
+	jsonWebToken "botp-gateway/utils/jwt"
 	"slices"
 
 	"github.com/gofiber/fiber/v2"

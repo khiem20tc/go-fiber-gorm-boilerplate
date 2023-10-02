@@ -1,8 +1,7 @@
 package validator
 
 import (
-	"go-api/middleware"
-	"go-api/model"
+	"botp-gateway/middleware"
 	"reflect"
 	"regexp"
 	"strings"
@@ -23,27 +22,9 @@ func RegisterCustomValidator() {
 	validate.RegisterValidation("sortOrder", func(fl validator.FieldLevel) bool {
 		return EnumValidator(fl, []string{string("desc"), string("asc")})
 	})
-	validate.RegisterValidation("coupon_status_enum", func(fl validator.FieldLevel) bool {
-		return EnumValidator(fl, []string{string(model.COUPON_ON_GOING), string(model.COUPON_ENDED), string(model.COUPON_DRAFT)})
-	})
-	validate.RegisterValidation("coupon_filter_enum", func(fl validator.FieldLevel) bool {
-		return EnumValidator(fl, []string{string(PUBLISHED), string(SCHEDULED), string(DRAFT), string(TRASH)})
-	})
 	validate.RegisterValidation("bool_value_validator", func(fl validator.FieldLevel) bool {
 		value := fl.Field()
 		return isBool(value)
-	})
-	validate.RegisterValidation("coupon_sort_field_enum", func(fl validator.FieldLevel) bool {
-		return EnumValidator(fl, []string{string(Category), string(CouponExpiredAt), string(IsPromotion), string(Point), string(Remaining)})
-	})
-	validate.RegisterValidation("sort_order_enum", func(fl validator.FieldLevel) bool {
-		return EnumValidator(fl, []string{string(ASC), string(DESC)})
-	})
-	validate.RegisterValidation("coupon_valid_unit_enum", func(fl validator.FieldLevel) bool {
-		return EnumValidator(fl, []string{string(model.HOUR), string(model.WEEK), string(model.YEAR)})
-	})
-	validate.RegisterValidation("step_time_enum", func(fl validator.FieldLevel) bool {
-		return EnumValidator(fl, []string{string(DAY), string(WEEK), string(MONTH)})
 	})
 	validate.RegisterValidation("email", func(fl validator.FieldLevel) bool {
 		email := fl.Field().String()
