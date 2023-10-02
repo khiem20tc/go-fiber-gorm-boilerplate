@@ -1,8 +1,8 @@
 package main
 
 import (
-	"go-fiber-gorm-boilerplate/config"
-	"go-fiber-gorm-boilerplate/router"
+	"botp-gateway/config"
+	"botp-gateway/router"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"

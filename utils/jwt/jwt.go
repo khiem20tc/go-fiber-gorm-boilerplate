@@ -1,13 +1,13 @@
 package jsonWebToken
 
 import (
-	"go-api/config"
-	"go-api/model"
+	"botp-gateway/config"
+	"botp-gateway/model"
 	"time"
 
 	jwt "github.com/golang-jwt/jwt/v5"
 
-	redis "go-api/utils/redis"
+	redis "botp-gateway/utils/redis"
 )
 
 var timeExpiredTokenEmail = time.Minute * 15
@@ -63,7 +63,7 @@ func ParseToken(tokenString string) (*MapClaims, error) {
 	mapClaims := &MapClaims{
 		ID:    claims["id"].(string),
 		Email: claims["email"].(string),
-		Role:  model.Role(claims["role"].(string)),
+		Role:  model.Role{},
 		Exp:   expiration,
 	}
 
@@ -116,7 +116,7 @@ func ParseTokenEmail(tokenString string) (*MapClaims, error) {
 	mapClaims := &MapClaims{
 		ID:    claims["id"].(string),
 		Email: claims["email"].(string),
-		Role:  model.Role(claims["role"].(string)),
+		Role:  model.Role{},
 		Exp:   expiration,
 	}
 

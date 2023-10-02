@@ -1,8 +1,8 @@
 package totp
 
 import (
+	"botp-gateway/config"
 	"encoding/base32"
-	"go-api/config"
 	"log"
 	"time"
 

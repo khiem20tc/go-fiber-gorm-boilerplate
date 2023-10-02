@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	config "go-fiber-gorm-boilerplate/config"
-	model "go-fiber-gorm-boilerplate/model"
+	config "botp-gateway/config"
+	model "botp-gateway/model"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
