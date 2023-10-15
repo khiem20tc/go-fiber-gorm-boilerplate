@@ -38,6 +38,11 @@ DATABASE_URL="localhost:5432"
 go run main.go
 ```
 
+4. Gen swagger API document using the following command:
+```bash
+go run ./scripts/gen-swagger/main.go
+```
+
 ## Usage
 
 Once the BOTP Gateway is up and running, you can start sending API requests to it, and it will handle load balancing, rate limiting, and forwarding based on the configuration.

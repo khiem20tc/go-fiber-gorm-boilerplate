@@ -7,6 +7,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/fiber/v2/middleware/monitor"
+	"github.com/gofiber/swagger"
 )
 
 func main() {
@@ -19,6 +20,9 @@ func main() {
 
 	// Initialize default config (Assign the middleware to /metrics)
 	app.Get("/metrics", monitor.New())
+
+	// Gen swagger API documents
+	app.Get("/swagger/*", swagger.HandlerDefault) // default
 
 	// Initialize default config
 	app.Use(logger.New(logger.Config{}))
