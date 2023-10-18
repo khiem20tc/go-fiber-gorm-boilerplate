@@ -1,11 +1,11 @@
 package genCommentUtil
 
 import (
+	"botp-gateway/scripts/gen-swagger/types"
+	commonUtil "botp-gateway/scripts/gen-swagger/utils/common"
+	convertTypeUtil "botp-gateway/scripts/gen-swagger/utils/convert-type"
+	sourceDataUtil "botp-gateway/scripts/gen-swagger/utils/source-data"
 	"fmt"
-	"go-api/scripts/gen-swagger/types"
-	commonUtil "go-api/scripts/gen-swagger/utils/common"
-	convertTypeUtil "go-api/scripts/gen-swagger/utils/convert-type"
-	sourceDataUtil "go-api/scripts/gen-swagger/utils/source-data"
 	"sort"
 
 	"go/ast"

@@ -1,8 +1,8 @@
 package types
 
 import (
-	convertTypeUtil "go-api/scripts/gen-swagger/utils/convert-type"
-	sourceDataUtil "go-api/scripts/gen-swagger/utils/source-data"
+	convertTypeUtil "botp-gateway/scripts/gen-swagger/utils/convert-type"
+	sourceDataUtil "botp-gateway/scripts/gen-swagger/utils/source-data"
 	"go/ast"
 )
 

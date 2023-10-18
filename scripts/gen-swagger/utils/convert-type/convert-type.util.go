@@ -1,10 +1,10 @@
 package convertTypeUtil
 
 import (
+	commonUtil "botp-gateway/scripts/gen-swagger/utils/common"
+	deftSourceUtil "botp-gateway/scripts/gen-swagger/utils/deft-source"
+	sourceDataUtil "botp-gateway/scripts/gen-swagger/utils/source-data"
 	"fmt"
-	commonUtil "go-api/scripts/gen-swagger/utils/common"
-	deftSourceUtil "go-api/scripts/gen-swagger/utils/deft-source"
-	sourceDataUtil "go-api/scripts/gen-swagger/utils/source-data"
 	"go/ast"
 	"reflect"
 	"regexp"

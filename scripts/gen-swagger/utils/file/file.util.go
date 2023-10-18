@@ -1,8 +1,8 @@
 package fileUtil
 
 import (
+	"botp-gateway/scripts/gen-swagger/types"
 	"fmt"
-	"go-api/scripts/gen-swagger/types"
 	"go/ast"
 	"go/parser"
 	"go/token"
