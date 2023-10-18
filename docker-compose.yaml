@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  services:
+  redis:
+    image: redis:5.0
+    ports:
+      - '2710:6379'
+    command: >
+      sh -c "echo 'appendonly yes' >> /data/redis.conf &&
+      echo 'appendfilename \"appendonly.aof\"' >> /data/redis.conf &&
+      redis-server /data/redis.conf --requirepass REDIS_PASSWORD"
+    volumes:
+      - redis_data:/data
+    restart: always
+  api:
+    build:
+      context: .
+    ports:
+      - "3002:3002"
+    depends_on:
+      - redis
+    restart: always
+
+volumes:
+  pqdata:
+    driver: local
+  redis_data:
+  

@@ -33,14 +33,30 @@ git clone git@github.com:B-K-Labs/BOTP-Gateway.git
 DATABASE_URL="localhost:5432"
 ```
 
-3. Run the BOTP Gateway using the following command:
+3. Download and install packages
+```bash
+go mod download && go mod tidy
+```
+
+4. Run the BOTP Gateway using the following command:
 ```bash
 go run main.go
 ```
 
-4. Gen swagger API document using the following command:
+or 
+
 ```bash
-go run ./scripts/gen-swagger/main.go
+nodemon --watch './**/*.go' --signal SIGTERM --exec 'go' run ./main.go
+```
+
+5. Gen swagger API document using the following command:
+```bash
+go run ./scripts/gen-swagger/main.go && go run ./scripts/swag/main.go init --ot go,json --parseDependency true
+```
+
+6. Build docker container
+```bash
+docker-compose up -d --force-recreate
 ```
 
 ## Usage
