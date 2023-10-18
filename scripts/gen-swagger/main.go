@@ -1,14 +1,14 @@
 package main
 
 import (
+	"botp-gateway/scripts/gen-swagger/types"
+	commonUtil "botp-gateway/scripts/gen-swagger/utils/common"
+	convertType "botp-gateway/scripts/gen-swagger/utils/convert-type"
+	deftSourceUtil "botp-gateway/scripts/gen-swagger/utils/deft-source"
+	fileUtil "botp-gateway/scripts/gen-swagger/utils/file"
+	genCommentUtil "botp-gateway/scripts/gen-swagger/utils/gen-comment"
+	sourceDataUtil "botp-gateway/scripts/gen-swagger/utils/source-data"
 	"fmt"
-	"go-api/scripts/gen-swagger/types"
-	commonUtil "go-api/scripts/gen-swagger/utils/common"
-	convertType "go-api/scripts/gen-swagger/utils/convert-type"
-	deftSourceUtil "go-api/scripts/gen-swagger/utils/deft-source"
-	fileUtil "go-api/scripts/gen-swagger/utils/file"
-	genCommentUtil "go-api/scripts/gen-swagger/utils/gen-comment"
-	sourceDataUtil "go-api/scripts/gen-swagger/utils/source-data"
 	"go/ast"
 	"go/format"
 	"strings"
