@@ -49,6 +49,11 @@ or
 nodemon --watch './**/*.go' --signal SIGTERM --exec 'go' run ./main.go
 ```
 
+5. Run Lint-stage for Golang
+```bash
+golangci-lint run  
+```
+
 5. Gen swagger API document using the following command:
 ```bash
 go run ./scripts/gen-swagger/main.go && go run ./scripts/swag/main.go init --ot go,json --parseDependency true
