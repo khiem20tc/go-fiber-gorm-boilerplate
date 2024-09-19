@@ -1,7 +1,7 @@
 package router
 
 import (
-	userRouter "botp-gateway/router/user"
+	userRouter "fiber-gateway/router/user"
 
 	"github.com/gofiber/fiber/v2"
 )

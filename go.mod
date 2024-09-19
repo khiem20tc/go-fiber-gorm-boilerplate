@@ -1,4 +1,4 @@
-module botp-gateway
+module fiber-gateway
 
 go 1.21
 

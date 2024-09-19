@@ -1,8 +1,8 @@
 package totp
 
 import (
-	"botp-gateway/config"
 	"encoding/base32"
+	"fiber-gateway/config"
 	"log"
 	"time"
 

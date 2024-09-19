@@ -1,8 +1,8 @@
 package userService
 
 import (
-	"botp-gateway/gorm"
-	"botp-gateway/model"
+	"fiber-gateway/gorm"
+	"fiber-gateway/model"
 
 	"github.com/gofiber/fiber/v2"
 )

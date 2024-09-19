@@ -1,8 +1,8 @@
-# BOTP Gateway
+# Fiber Gateway
 
 ![Golang](https://img.shields.io/badge/language-Golang-blue.svg)
 
-The BOTP Gateway is a GoLang-based project designed to serve as a versatile gateway for various API management
+The Fiber Gateway is a GoLang-based project designed to serve as a versatile gateway for various API management
 
 ## Features
 
@@ -16,15 +16,16 @@ The BOTP Gateway is a GoLang-based project designed to serve as a versatile gate
 
 ### Prerequisites
 
-Before you can run the BOTP Gateway, ensure you have the following prerequisites installed:
+Before you can run the Fiber Gateway, ensure you have the following prerequisites installed:
 
 - [Go](https://golang.org/dl/): Make sure you have Go installed on your system.
 
 ### Installation
 
 1. Clone the repository to your local machine:
+
 ```bash
-git clone git@github.com:B-K-Labs/BOTP-Gateway.git
+git clone git@github.com:khiem20tc/go-fiber-gorm-boilerplate.git
 ```
 
 2. Create a `.env` file and define the necessary environment variables. These variables will be used for configuration. Example:
@@ -34,36 +35,41 @@ DATABASE_URL="localhost:5432"
 ```
 
 3. Download and install packages
+
 ```bash
 go mod download && go mod tidy
 ```
 
-4. Run the BOTP Gateway using the following command:
+4. Run the Fiber Gateway using the following command:
+
 ```bash
 go run main.go
 ```
 
-or 
+or
 
 ```bash
 nodemon --watch './**/*.go' --signal SIGTERM --exec 'go' run ./main.go
 ```
 
 5. Run Lint-stage for Golang
+
 ```bash
-golangci-lint run  
+golangci-lint run
 ```
 
 5. Gen swagger API document using the following command:
+
 ```bash
 go run ./scripts/gen-swagger/main.go && go run ./scripts/swag/main.go init --ot go,json --parseDependency true
 ```
 
 6. Build docker container
+
 ```bash
 docker-compose up -d --force-recreate
 ```
 
 ## Usage
 
-Once the BOTP Gateway is up and running, you can start sending API requests to it, and it will handle load balancing, rate limiting, and forwarding based on the configuration.
+Once the Fiber Gateway is up and running, you can start sending API requests to it, and it will handle load balancing, rate limiting, and forwarding based on the configuration.

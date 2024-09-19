@@ -1,7 +1,7 @@
 package fileUtil
 
 import (
-	"botp-gateway/scripts/gen-swagger/types"
+	"fiber-gateway/scripts/gen-swagger/types"
 	"fmt"
 	"go/ast"
 	"go/parser"

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"botp-gateway/config"
-	"botp-gateway/router"
+	"fiber-gateway/config"
+	"fiber-gateway/router"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
@@ -10,12 +10,12 @@ import (
 	"github.com/gofiber/swagger"
 )
 
-// @title BOTP Gateway API
+// @title Fiber Gateway API
 // @version 1.0
-// @description Documentation for BOTP Gateway API
+// @description Documentation for Fiber Gateway API
 // @termsOfService http://swagger.io/terms/
 
-// @contact.name BOTP Gateway Support
+// @contact.name Fiber Gateway Support
 // @contact.url http://www.swagger.io/support
 // @contact.email support@swagger.io
 

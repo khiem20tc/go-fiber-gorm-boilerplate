@@ -1,7 +1,7 @@
 package dto
 
 import (
-	"botp-gateway/model"
+	"fiber-gateway/model"
 	"time"
 
 	"github.com/dranikpg/dto-mapper"

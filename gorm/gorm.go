@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	config "botp-gateway/config"
-	model "botp-gateway/model"
+	config "fiber-gateway/config"
+	model "fiber-gateway/model"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

@@ -1,8 +1,8 @@
 package types
 
 import (
-	convertTypeUtil "botp-gateway/scripts/gen-swagger/utils/convert-type"
-	sourceDataUtil "botp-gateway/scripts/gen-swagger/utils/source-data"
+	convertTypeUtil "fiber-gateway/scripts/gen-swagger/utils/convert-type"
+	sourceDataUtil "fiber-gateway/scripts/gen-swagger/utils/source-data"
 	"go/ast"
 )
 

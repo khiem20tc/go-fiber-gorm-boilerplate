@@ -1,9 +1,9 @@
 package convertTypeUtil
 
 import (
-	commonUtil "botp-gateway/scripts/gen-swagger/utils/common"
-	deftSourceUtil "botp-gateway/scripts/gen-swagger/utils/deft-source"
-	sourceDataUtil "botp-gateway/scripts/gen-swagger/utils/source-data"
+	commonUtil "fiber-gateway/scripts/gen-swagger/utils/common"
+	deftSourceUtil "fiber-gateway/scripts/gen-swagger/utils/deft-source"
+	sourceDataUtil "fiber-gateway/scripts/gen-swagger/utils/source-data"
 	"fmt"
 	"go/ast"
 	"reflect"

@@ -1,10 +1,10 @@
 package genCommentUtil
 
 import (
-	"botp-gateway/scripts/gen-swagger/types"
-	commonUtil "botp-gateway/scripts/gen-swagger/utils/common"
-	convertTypeUtil "botp-gateway/scripts/gen-swagger/utils/convert-type"
-	sourceDataUtil "botp-gateway/scripts/gen-swagger/utils/source-data"
+	"fiber-gateway/scripts/gen-swagger/types"
+	commonUtil "fiber-gateway/scripts/gen-swagger/utils/common"
+	convertTypeUtil "fiber-gateway/scripts/gen-swagger/utils/convert-type"
+	sourceDataUtil "fiber-gateway/scripts/gen-swagger/utils/source-data"
 	"fmt"
 	"sort"
 

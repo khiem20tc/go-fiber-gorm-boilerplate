@@ -1,7 +1,7 @@
 package validator
 
 import (
-	"botp-gateway/middleware"
+	"fiber-gateway/middleware"
 	"reflect"
 	"regexp"
 	"strings"

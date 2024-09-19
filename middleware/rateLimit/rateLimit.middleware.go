@@ -1,7 +1,7 @@
 package rateLimitMiddleware
 
 import (
-	"botp-gateway/validator"
+	"fiber-gateway/validator"
 	"time"
 
 	"github.com/gofiber/fiber/v2"

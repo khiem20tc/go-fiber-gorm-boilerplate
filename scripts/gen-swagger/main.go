@@ -1,13 +1,13 @@
 package main
 
 import (
-	"botp-gateway/scripts/gen-swagger/types"
-	commonUtil "botp-gateway/scripts/gen-swagger/utils/common"
-	convertType "botp-gateway/scripts/gen-swagger/utils/convert-type"
-	deftSourceUtil "botp-gateway/scripts/gen-swagger/utils/deft-source"
-	fileUtil "botp-gateway/scripts/gen-swagger/utils/file"
-	genCommentUtil "botp-gateway/scripts/gen-swagger/utils/gen-comment"
-	sourceDataUtil "botp-gateway/scripts/gen-swagger/utils/source-data"
+	"fiber-gateway/scripts/gen-swagger/types"
+	commonUtil "fiber-gateway/scripts/gen-swagger/utils/common"
+	convertType "fiber-gateway/scripts/gen-swagger/utils/convert-type"
+	deftSourceUtil "fiber-gateway/scripts/gen-swagger/utils/deft-source"
+	fileUtil "fiber-gateway/scripts/gen-swagger/utils/file"
+	genCommentUtil "fiber-gateway/scripts/gen-swagger/utils/gen-comment"
+	sourceDataUtil "fiber-gateway/scripts/gen-swagger/utils/source-data"
 	"fmt"
 	"go/ast"
 	"go/format"

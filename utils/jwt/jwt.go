@@ -1,13 +1,13 @@
 package jsonWebToken
 
 import (
-	"botp-gateway/config"
-	"botp-gateway/model"
+	"fiber-gateway/config"
+	"fiber-gateway/model"
 	"time"
 
 	jwt "github.com/golang-jwt/jwt/v5"
 
-	redis "botp-gateway/utils/redis"
+	redis "fiber-gateway/utils/redis"
 )
 
 var timeExpiredTokenEmail = time.Minute * 15
